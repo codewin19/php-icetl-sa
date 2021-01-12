@@ -8,15 +8,73 @@
 </head>
 
 <body>
-    <form action="#">
-        <label for="username">Enter Username : </label>
-        <input type="text">
-        <br><br>
-        <label for="mobile number">Enter mobile Number : </label>
-        <input type="text">
-        <br>
-        <input type="submit" value="Register">
+    <!-- Form starts here -->
+    <form action="process.php" method="post">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td><label for="username">Enter Username : </label></td>
+                    <td><input type="text" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Email : </label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td> <label for="mobile number">Enter Password : </label></td>
+                    <td><input type="password" placeholder="Enter Passwordcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message : </label></td>
+                    <td><textarea cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender : </label></td>
+                    <td><label for="Male"><input type="radio" name="gender" value="M" checked="checked"> Male</label> &nbsp;&nbsp;<label for="Female"><input type="radio" name="gender" value="F"> Female</label> </td>
+                </tr>
+                <tr>
+                    <td><label for="Course">Courses : </label></td>
+                    <td>
+                        <label for="HTML"><input type="checkbox" name="courses[]" value="html"> HTML</label>&nbsp;&nbsp;&nbsp;
+                        <label for="CSS"><input type="checkbox" name="courses[]" value="css"> CSS</label>&nbsp;&nbsp;&nbsp;
+                        <label for="JavaScript"><input type="checkbox" name="courses[]" value="js"> JavaScript</label>&nbsp;&nbsp;&nbsp;
+                        <label for="PHP"><input type="checkbox" name="courses[]" value="php"> PHP</label>&nbsp;&nbsp;&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Sate">State : </label></td>
+                    <td>
+                        <select name="state">
+                        <option value="haryana">Haryana</option>
+                        <option value="bihar">Bihar</option>
+                        <option value="J&k">Jammu And Kashmir</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="data of birth">Date of birth : </label></td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="profile picture">Profile Picture : </label></td>
+                    <td>
+                        <input type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="image" src="index.jpg"></td>
+                </tr>
+            </table>
+        </fieldset>
     </form>
+
+    <hr>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7195.900772260844!2d85.13644017518246!3d25.606564834829506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58688297a6f3%3A0x7b2558c82fd5ff4b!2sPatna%20Junction%20railway%20station!5e0!3m2!1sen!2sin!4v1610467747373!5m2!1sen!2sin"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </body>
 
 </html>
