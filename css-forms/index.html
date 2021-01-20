@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --bgcolor: rgb(235, 244, 251);
+            --border-color: rgb(187, 220, 235);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            /* to center*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .form-container {
+            width: 650px;
+            padding: 25px;
+            background-color: var(--bgcolor);
+            border: 3px solid var(--border-color);
+        }
+        
+        .header {
+            padding: 15px;
+        }
+        
+        small {
+            color: gray;
+        }
+        
+        hr {
+            margin: 10px 0;
+            color: var(--border-color);
+        }
+        
+        .form-container table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+        
+        table label,
+        table small {
+            text-align: right;
+            display: block;
+            /* background-color: green; */
+        }
+        
+        form input {
+            font-size: 1.2em;
+            padding: 0.3em 1.2em;
+            border: 1px solid var(--border-color);
+        }
+        
+        form label span {
+            color: red;
+        }
+        
+        table label {
+            font-weight: 600;
+            font-size: 1.125em;
+        }
+        
+        table button {
+            background-color: #555;
+            color: white;
+            font-size: 1.125em;
+            font-weight: 600;
+            text-align: center;
+            padding: 10px 35px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 2px 3px 3px black;
+            transition: all 0.3s;
+        }
+        
+        table button:hover {
+            background-color: #999;
+        }
+        
+        table button:active {
+            box-shadow: inset -2px -3px 3px black;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="header">
+            <h2>Sign-up form</h2>
+            <small>This is rhe basic look of my form without table</small>
+            <hr/>
+        </div>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="">Name <span>*</span></label>
+                        <small>Add Your name</small>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Email <span>&nbsp;</span></label>
+                        <small>Add a valid email</small>
+                    </td>
+                    <td>
+                        <input type="email" style="background-image:url('email.png');background-repeat: no-repeat;background-position:left center;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Password <span>*</span></label>
+                        <small>Min. size 6 chars</small>
+                    </td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button>Sign-up</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>
